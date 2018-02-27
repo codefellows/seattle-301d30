@@ -4,7 +4,8 @@
 
 const homeView = {};
 
-homeView.init = function () {
+homeView.init = function (ctx) {
+  console.log(ctx);
   console.log('inside homeView.init');
   $('#contacts').empty();
   $('body').css('background-color', 'blue');

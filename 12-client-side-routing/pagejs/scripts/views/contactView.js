@@ -5,8 +5,9 @@
 
 const contactView = {};
 
-contactView.init = function () {
+contactView.init = function (ctx) {
   console.log('inside contactView.init');
+  console.log(ctx);
   $('#contacts').empty();
   $('body').css('background-color', '#ddd');
   $('#content').text('This is the Contacts page').css('color', 'purple');
